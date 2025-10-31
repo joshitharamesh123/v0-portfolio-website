@@ -32,9 +32,7 @@ export default function Services() {
   return (
     <section className="min-h-screen px-6 py-20">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
-          <span className="text-accent">04.</span> My Quality Services
-        </h2>
+        <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">My Quality Services</h2>
 
         <p className="text-muted-foreground text-lg mb-12 max-w-3xl">
           I deliver clean, functional, and aesthetically pleasing digital solutions through a blend of technology and

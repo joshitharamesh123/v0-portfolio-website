@@ -7,8 +7,7 @@ export default function Contact() {
         <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground text-center">Let's Work Together!</h2>
 
         <p className="text-muted-foreground text-lg mb-12 leading-relaxed text-center max-w-2xl mx-auto">
-          I'm always interested in hearing about new projects, opportunities, and collaborations. Whether you have a
-          question, want to discuss potential projects, or just want to say hi – don't hesitate to reach out!
+          I'm always interested in hearing about new projects, opportunities, and collaborations. Whether you have a question, want to discuss potential projects, or just want to say hi – kindly reach out!
         </p>
 
         <div className="bg-card border border-border rounded-lg p-8 md:p-12 mb-12">
@@ -59,9 +58,7 @@ export default function Contact() {
           </div>
         </div>
 
-        <p className="text-center text-muted-foreground text-sm">
-          Designed & Built with React + Next.js by Joshitha Ramesh © 2025
-        </p>
+        
       </div>
     </section>
   )

@@ -17,7 +17,7 @@ export default function Navigation() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <nav className="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold text-accent hover:text-accent/80 transition-colors">
+        <Link href="#hero" className="text-2xl font-bold text-accent hover:text-accent/80 transition-colors">
           JR
         </Link>
 

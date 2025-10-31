@@ -14,9 +14,9 @@ export default function Hero() {
 
   const stats = [
     { number: "10+", label: "Projects" },
+    { number: "3+", label: "Hackathon Wins" },
     { number: "3+", label: "Internships" },
     { number: "2028", label: "Graduating" },
-    { number: "5+", label: "Skills" },
   ]
 
   return (
