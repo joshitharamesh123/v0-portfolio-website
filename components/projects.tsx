@@ -8,6 +8,7 @@ export default function Projects() {
         "An intelligent chatbot capable of answering student queries using natural language processing. Designed conversation flow and implemented backend logic.",
       technologies: ["Python", "scikit-learn", "NLTK", "React"],
       role: "Full Stack Developer",
+      image: "/ai-chatbot-interface-with-chat-bubbles.jpg",
       links: { github: "#", demo: "#" },
     },
     {
@@ -16,6 +17,7 @@ export default function Projects() {
         "Developed an AI model to assist in early TB detection through machine learning analysis. Handled data preprocessing, feature engineering, and model optimization.",
       technologies: ["Python", "TensorFlow", "Pandas", "NumPy"],
       role: "ML Engineer",
+      image: "/medical-ai-analysis-with-x-ray-and-data-visualizat.jpg",
       links: { github: "#", demo: "#" },
     },
     {
@@ -24,6 +26,7 @@ export default function Projects() {
         "A modern, minimalist portfolio website showcasing projects and skills. Built with Next.js and Tailwind CSS with smooth animations and responsive design.",
       technologies: ["Next.js", "React", "Tailwind CSS", "TypeScript"],
       role: "Full Stack Developer",
+      image: "/modern-portfolio-website-interface.jpg",
       links: { github: "#", demo: "#" },
     },
   ]
@@ -31,9 +34,7 @@ export default function Projects() {
   return (
     <section className="min-h-screen px-6 py-20 bg-card/30">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-foreground">
-          <span className="text-accent">05.</span> Projects
-        </h2>
+        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-foreground">Projects</h2>
 
         <div className="space-y-12">
           {projects.map((project, idx) => (
@@ -41,8 +42,12 @@ export default function Projects() {
               key={idx}
               className="bg-card border border-border rounded-lg overflow-hidden hover:border-accent/50 transition-colors"
             >
-              <div className="bg-gradient-to-r from-accent/10 to-accent/5 h-48 flex items-center justify-center">
-                <div className="text-6xl font-bold text-accent/20">{String(idx + 1).padStart(2, "0")}</div>
+              <div className="bg-gradient-to-r from-accent/10 to-accent/5 h-48 flex items-center justify-center overflow-hidden">
+                <img
+                  src={project.image || "/placeholder.svg"}
+                  alt={project.title}
+                  className="w-full h-full object-cover"
+                />
               </div>
 
               <div className="p-6 md:p-8">

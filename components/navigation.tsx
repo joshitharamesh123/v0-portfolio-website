@@ -4,11 +4,11 @@ import Link from "next/link"
 import { useState } from "react"
 
 const navItems = [
-  { number: "01", label: "About", id: "about" },
-  { number: "02", label: "Experience", id: "experience" },
-  { number: "03", label: "Skills", id: "skills" },
-  { number: "04", label: "Projects", id: "projects" },
-  { number: "05", label: "Contact", id: "contact" },
+  { label: "About", id: "about" },
+  { label: "Experience", id: "experience" },
+  { label: "Skills", id: "skills" },
+  { label: "Projects", id: "projects" },
+  { label: "Contact", id: "contact" },
 ]
 
 export default function Navigation() {
@@ -17,7 +17,7 @@ export default function Navigation() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <nav className="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
-        <Link href="#" className="text-2xl font-bold text-accent hover:text-accent/80 transition-colors">
+        <Link href="/" className="text-2xl font-bold text-accent hover:text-accent/80 transition-colors">
           JR
         </Link>
 
@@ -28,7 +28,7 @@ export default function Navigation() {
               href={`#${item.id}`}
               className="text-sm font-medium text-muted-foreground hover:text-accent transition-colors"
             >
-              <span className="text-accent">{item.number}</span> {item.label}
+              {item.label}
             </Link>
           ))}
         </div>
@@ -57,7 +57,7 @@ export default function Navigation() {
                 className="block text-sm font-medium text-muted-foreground hover:text-accent transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                <span className="text-accent">{item.number}</span> {item.label}
+                {item.label}
               </Link>
             ))}
           </div>

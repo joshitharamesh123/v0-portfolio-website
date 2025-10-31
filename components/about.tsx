@@ -2,9 +2,7 @@ export default function About() {
   return (
     <section className="min-h-screen px-6 py-20 bg-card/30">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-foreground">
-          <span className="text-accent">01.</span> About Me
-        </h2>
+        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-foreground">About Me</h2>
 
         <div className="grid md:grid-cols-3 gap-8 items-start">
           <div className="md:col-span-2 space-y-4">

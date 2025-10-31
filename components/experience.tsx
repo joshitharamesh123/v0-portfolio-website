@@ -11,14 +11,23 @@ export default function Experience() {
         "Participated in code reviews and best practices implementation",
       ],
     },
+    {
+      title: "Intern",
+      company: "HCL Tech",
+      period: "January – June 2025",
+      description: [
+        "Developing full-stack web applications using modern technologies",
+        "Implementing responsive UI components and backend APIs",
+        "Collaborating with senior developers on real-world projects",
+        "Contributing to optimization and code quality improvements",
+      ],
+    },
   ]
 
   return (
     <section className="min-h-screen px-6 py-20">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-foreground">
-          <span className="text-accent">02.</span> Experience
-        </h2>
+        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-foreground">Experience</h2>
 
         <div className="space-y-8">
           {experiences.map((exp, idx) => (
